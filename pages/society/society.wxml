@@ -1,0 +1,23 @@
+<!--pages/society/society.wxml-->
+<scroll-view class='scroll' scroll-y='true'>
+  <view class="content">
+    <!-- 头像 -->
+    <view class="author-date"> 
+        <text class="date">2018年8月17日</text>
+    </view>
+    <!-- 标题内容 -->
+    <text class="title">七夕乞巧|花语攻略</text>
+    <image class="image" src="/pages/images/c1.jpg" bindtap='onArticleClick'></image>
+    <text class="article-content">换我心，为你心，始知相忆深。</text>
+  </view>
+  <view class="content2">
+    <!-- 头像 -->
+    <view class="author-date2"> 
+        <text class="date2">2018年8月28日</text>
+    </view>
+    <!-- 标题内容 -->
+    <text class="title2">鲜花养护小知识|让爱永久绽放</text>
+    <image class="image2" src="/pages/images/c2.jpg" bindtap='onArticleClick'></image>
+    <text class="article-content2">延长花期，为爱保鲜~</text>
+  </view>
+</scroll-view>

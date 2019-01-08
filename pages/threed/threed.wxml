@@ -1,0 +1,13 @@
+<!--pages/threed/threed.wxml-->
+<view class='draw-content'>
+  <view class='litlelooks-wrap' bindtouchmove="imagetouchmove" style='left:{{leftLooks}}px;top:{{topLooks}}px;'>
+    <image class='litlelooks-image' src='/pages/images/flower.png'></image>
+  </view>
+  <view class='litlelooks-wrap2' bindtouchmove="imagetouchmove2" style='left:{{leftLooks2}}px;top:{{topLooks2}}px;'>
+    <image class='litlelooks-image2' src='/pages/images/flowerLeft.png'></image>
+  </view>
+  <view class='litlelooks-wrap3' bindtouchmove="imagetouchmove3" style='left:{{leftLooks3}}px;top:{{topLooks3}}px;'>
+    <image class='litlelooks-image3' src='/pages/images/flowerRight.png'></image>
+  </view>
+</view>
+<image class='bottle' src='/pages/images/bottle.png'></image>

@@ -1,0 +1,43 @@
+<!--pages/order/order.wxml-->
+<scroll-view class="container"
+scroll-y="true">
+  <swiper class="categoryList" indicator-dots="false" 
+  indicator-color="rgba(228,228,228,1)" 
+  indicator-active-color="rgb(255,255,255)">
+    <block wx:for="{{categoryList}}" wx:key="">
+    <swiper-item>
+    <block wx:for="{{item}}" wx:key="">
+      <view class="category-info">
+        <image src="{{item.src}}" 
+        class="category-image"></image>
+        <view class="category-text">{{item.name}}</view>
+      </view>
+    </block>
+    </swiper-item>
+    </block>
+  </swiper>
+  <block wx:for="{{orderList}}" wx:key="">
+    <view class="orderList">
+      <view class="order-title">
+        <view class="order-title-restaurantName">
+          {{item.restaurantName}}</view>
+        <view class="order-title-state">{{item.state}}</view>
+      </view>
+      <view class="order-content">
+        <image class="order-content-restaurantImg"
+         src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539493719&di=1e19d1d5111cf5d223346f006278b084&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F019872597c2017a8012193a3bb73f9.jpg%401280w_1l_2o_100sh.jpg"></image>
+        <view class="order-content-info">
+          <view class="order-content-info-price">￥ {{item.price}}</view>
+          <view class="order-content-info-date">
+          {{item.date}} {{item.time}}</view>
+          <view class="order-content-info-howToDistribute">
+          由 {{item.howToDistribute}} 提供服务</view>
+        </view>
+      </view>
+      <view class="order-footer">
+        <view class="order-footer-orderAgain" bindtap='onAnotherClick'>再来一单</view>
+        <view class="order-footer-goToComment">去评论</view>
+      </view>
+    </view>
+  </block> 
+</scroll-view>

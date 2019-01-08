@@ -1,0 +1,44 @@
+/* pages/threed/threed.wxss */
+page{
+  overflow: hidden;
+  position: fixed;
+  background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539019042979&di=0ee4637d97c35c2edb4b145922a82434&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2F201708%2F20%2F092306k8q3683tv3qkz2pp.jpg');
+  margin: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bottle{
+  top: 550rpx;
+  margin-left: 80rpx;
+  width: 225rpx;
+  height: 360rpx;
+  float: left;
+  position: absolute
+}
+.litlelooks-wrap{
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+}
+.litlelooks-image{
+  width: 120px;
+  height:240px;
+}
+.litlelooks-wrap2{
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+}
+.litlelooks-image2{
+  width: 120px;
+  height:240px;
+}
+.litlelooks-wrap3{
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+}
+.litlelooks-image3{
+  width: 120px;
+  height:240px;
+}
